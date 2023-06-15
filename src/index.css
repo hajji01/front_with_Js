@@ -1,0 +1,157 @@
+body {
+  background-image: url("../images/backgroundImage.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+.start {
+  border: 0px;
+  font-weight: 600;
+  font-size: 150%;
+  color: azure;
+  background: none;
+}
+.start:hover {
+  background-color: rgb(194, 9, 9);
+  border-radius: 50%;
+}
+.header {
+  margin-top: 10px;
+  display: flex;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.game {
+  position: relative;
+}
+.inGame {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+}
+#personnageSelector {
+  width: 300px;
+  background-color: red;
+}
+
+#personnageModifier {
+  background-color: rgb(132, 111, 111);
+  width: 100px;
+}
+.buttonsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.icon {
+  cursor: pointer;
+  width: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.carte {
+  border: 20px;
+  border-color: black;
+  background-color: black;
+  border-radius: 8%;
+}
+img {
+  border-radius: 15%;
+}
+
+.array {
+  display: flex;
+  flex-direction: row;
+}
+.inSession {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: auto;
+  height: 28vh;
+}
+.carte {
+  margin-left: 10px;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.carte:hover {
+  animation: slidein3 0.8s linear;
+}
+
+.imageCarte {
+  size: cover;
+  width: 160px;
+  height: 120px;
+  border-radius: 10%;
+}
+.aperçu {
+  width: 300px;
+  border-radius: 10%;
+}
+.aperçu:hover {
+  animation: slidein2 0.8s linear;
+}
+
+#click-photo {
+  display: none;
+  justify-content: center;
+  position: relative;
+  margin-left: 45%;
+}
+
+.video {
+  display: none;
+}
+#start-camera {
+  border: 0px;
+  justify-content: center;
+  width: 30;
+}
+#start-camera:hover {
+  animation: slidein 0.8s linear;
+}
+#click-photo:hover {
+  animation: slidein 0.8s linear;
+}
+.save:hover {
+  animation: slidein 0.8s linear;
+}
+.icon:hover {
+  animation: slidein 0.8s linear;
+}
+
+@keyframes slidein {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+
+@keyframes slidein3 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.8);
+  }
+}
